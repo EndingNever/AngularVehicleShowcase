@@ -21,7 +21,7 @@ export class CarsService {
       sixty: '3.3s',
       topSpeed: '214mph',
       hundred: '5.9s',
-      photo: "/assets/img/AMGCLKGTR1.jpg"
+      photo: "assets/img/AMGCLKGTR1.jpg"
     },
     {
       make: 'Porsche',
@@ -34,7 +34,7 @@ export class CarsService {
       sixty: '3.9s',
       hundred: '8.7s',
       topSpeed: '187 mph',
-      photo: "/assets/img/LARGE993.jpg"
+      photo: "assets/img/LARGE993.jpg"
     },
     {
       make: 'Audi',
@@ -46,7 +46,7 @@ export class CarsService {
       curbWeight: "2,403 lb",
       sixty: '3.1s',
       topSpeed: '136 mph',
-      photo: "/assets/img/audi3.jpg"
+      photo: "assets/img/audi3.jpg"
     }
   ]
 
@@ -104,7 +104,7 @@ export class CarsService {
       sixty: '4.9s',
       topSpeed: '156mph',
       hundred: '11.8s',
-      photo: "/assets/img/r34Crop.jpg"
+      photo: "assets/img/r34Crop.jpg"
     },
     {
       make: 'Toyota',
@@ -117,7 +117,7 @@ export class CarsService {
       sixty: '5.9s',
       hundred: '15.4s',
       topSpeed: '152 mph',
-      photo: "/assets/img/sx4.jpg"
+      photo: "assets/img/sx4.jpg"
     },
     {
       
@@ -131,7 +131,7 @@ export class CarsService {
         sixty: '5.3s',
         hundred: '12.7s',
         topSpeed: '172 mph',
-        photo: "/assets/img/nsx.jpg"
+        photo: "assets/img/nsx.jpg"
     }
   ]
 
