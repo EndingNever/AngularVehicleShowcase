@@ -29,10 +29,10 @@ export class FerrariComponent implements OnInit {
   }
 
   mouseEnter() {
-    this.displayText = false;
+    // this.displayText = false;
   }
   mouseLeave() {
-    this.displayText = true;
+    // this.displayText = true;
   }
   
 }
