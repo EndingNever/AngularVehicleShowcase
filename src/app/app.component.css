@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+}
+.format {
+    /* border: 2px dashed pink; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* height: 97vh; */
+    justify-content: space-around;
+}
+
+.flagRow {
+    height: 94vh;
+    /* border: 2px solid red; */
+}
+
+input :active, :focus {
+    box-shadow: none !important;
+}
+
+.recommendForm {
+    /* border: 2px dashed violet; */
+    z-index: 1;
+    margin-top: 4px;
+    height: auto;
+    margin-bottom: -5px;
+}
+p > .year { /* These p tags change the color of the recommended cars*/
+    color: green;
+}
+p > .make {
+    color: #bc002d;
+}
+p > .model {
+    color: #FFCC00;
+}
+.rec {
+    /* border: 2px solid green; */
+    height: 5vh;
+}
+
+.german {
+    background-repeat: no-repeat;
+    width: 33%;
+}
+
+.flag {
+    background:linear-gradient(to top, #FFCC00 0, #FFCC00 33%, #FF0000 33%, #FF0000 66%, black 66%, black 100%);
+    display: block;
+    height: 50%;
+    width: 100%;
+}
+
+
+.italian {
+    display: block;
+    position: absolute;
+    height: 50%;
+    width: 33%;
+    /* background: linear-gradient(to right, green 33%, white 33%, red 100%  );*/
+    background:linear-gradient(to right, green 0, green 33%, white 33%, white 66%, #ff0000 66%, #ff0000 100%);
+    margin: 3px;
+    /* justify-content: center; */
+    /* align-self: center; */
+}
+
+.top {
+    height: 0vh;
+}
+
+
+.japan{
+    background-color: #bc002d;
+    border-radius: 50%;  /*Makes this a circle*/
+    height: 65%;
+    width: 33%;
+    order: 100;
+    display: block;
+    position: absolute;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .6s;
+}
+.format:hover .hide {
+        visibility: visible;
+        opacity: 1;
+}
+
+.italian .hide {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.japan .hide {
+    color: #bc002c;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+ .flag .hide {
+    color: red;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.photo {
+    /* border: 2px dashed blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 90%;
+}
+.photo2 {
+    /* border: 2px dashed blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* border-radius: 8%; */
+}
+
+.r34 {
+    z-index: 100;
+    width: 70%;
+    height: 35%;
+}
+
+h1 {
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+.btn-sm {
+    border: 2px solid green;
+    height: 25px
+}

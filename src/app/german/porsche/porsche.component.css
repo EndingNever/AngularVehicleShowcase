@@ -1,0 +1,15 @@
+.btn-outline-warning-1 {
+    border: 1px solid rgba(255, 166, 0, 0.89);
+    color:rgba(255, 166, 0, 0.89);
+}
+.btn-outline-warning-1:active, :focus{
+    outline: 0px;
+    box-shadow: 0px 0px 5px 1px rgba(255, 166, 0, 0.89) !important;
+}
+
+.btn-outline-warning-1:hover{
+    background-color: rgba(0, 0, 0, 0.664);
+}
+.info {
+    background-color: rgba(255, 166, 0, 0.89);
+}

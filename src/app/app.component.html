@@ -1,0 +1,87 @@
+<div class="container-fluid vh-100">
+  <div class="row rec">
+    <div class="col-6 top d-flex justify-content-start">
+      <h1>Select A Country to view cars:</h1>
+    </div>
+    <div class="col-6 top d-flex justify-content-end">
+      <h3>Recommend a car:</h3>
+      <button
+        class="
+          p-1
+          mt-2
+          ms-1
+          d-flex
+          justify-content-center
+          align-items-center
+          btn btn-sm btn-outline-success
+          rec
+        "
+        (click)="button()"
+      >
+        Click Me
+      </button>
+    </div>
+  </div>
+  <div class="row recommendForm" *ngIf="recommend">
+    <div class="col">
+      Year:
+      <input
+        class="w-25"
+        type="text"
+        placeholder=" 2021 "
+        
+        [(ngModel)]="recommendYear"
+      />
+      Make:<input
+        class="ms-1 w-25"
+        type="text"
+        placeholder=" Toyota "
+        [(ngModel)]="recommendMake"
+      />
+      Model:
+      <input
+        class=" w-25"
+        type="text"
+        placeholder=" Corolla "
+        [(ngModel)]="recommendModel"
+      />
+      <button class="btn p-1 btn-success ms-1 mt-1" (click)="onSubmit()" [disabled]='!recommendModel'>Submit</button>
+      <div *ngIf="submit">
+        <p *ngFor="let car of recommendArray; let i = index">
+          Thank you, we will consider your:
+          <span class="year">{{ car.year }} </span>
+          <span class="make">{{ car.make }} </span>
+          <span class="model">{{ car.model }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row flagRow">
+    <div
+      class="col-4 format d-flex align-self-center"
+      (click)="italianRoute()"
+      (click)="scroll()"
+    >
+      <!-- Italian Vehicles-->
+      <div class="italian d-flex justify-content-center align-items-center">
+        <!-- Italian flag-->
+        <h1 class="hide">Italy</h1>
+      </div>
+    </div>
+    <div class="col-4 format" (click)="japanRoute()" (click)="scroll()">
+      <div class="japan d-flex justify-content-center align-items-center">
+        <h1 class="hide">Japan</h1>
+      </div>
+    </div>
+
+    <div class="col-4 format german"  (click)="germanRoute()">
+      <div class="flag d-flex justify-content-center align-items-center">
+        <h1 class="hide">Germany</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet>
+  <span #target> 
+    </span>
+</router-outlet>
