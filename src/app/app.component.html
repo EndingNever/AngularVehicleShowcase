@@ -1,9 +1,9 @@
 <div class="container-fluid vh-100">
   <div class="row rec">
-    <div class="col-6 top d-flex justify-content-start">
+    <div class="d-none d-md-block top d-flex justify-content-start">
       <h1>Select A Country to view cars:</h1>
     </div>
-    <div class="col-6 top d-flex justify-content-end">
+    <div class="d-none d-md-block col-6  top d-flex justify-content-end">
       <h3>Recommend a car:</h3>
       <button
         class="
@@ -58,7 +58,7 @@
   </div>
   <div class="row flagRow">
     <div
-      class="col-4 format d-flex align-self-center"
+      class="col-12 col-md-4 format d-flex align-self-center" 
       (click)="italianRoute()"
       (click)="scroll()"
     >
@@ -68,13 +68,13 @@
         <h1 class="hide">Italy</h1>
       </div>
     </div>
-    <div class="col-4 format" (click)="japanRoute()" (click)="scroll()">
+    <div class="col-12 col-md-4 format" (click)="japanRoute()" (click)="scroll()">
       <div class="japan d-flex justify-content-center align-items-center">
         <h1 class="hide">Japan</h1>
       </div>
     </div>
 
-    <div class="col-4 format german"  (click)="germanRoute()">
+    <div class="col-12 col-md-4 format german"  (click)="germanRoute()">
       <div class="flag d-flex justify-content-center align-items-center">
         <h1 class="hide">Germany</h1>
       </div>
