@@ -22,22 +22,22 @@
           </div>
         </div>
   </div>
-      <div class="row d-flex align-content-center justify-content-around info border-0 g-0 d-flex"
+      <div class="row d-flex align-content-center justify-content-evenly info border-0 g-0 d-flex"
       id="porscheInfo"
       *ngIf="porscheInfo"
       >
-        <div class="col-3 ms-5 me-5">
-          In order to compete in the GT2 class race of the FIA GT Championship, a certain amount of vehicles needed to be produced and sold to the public. The vehicle is powered by a {{ car.engine }} engine, capable of producing
-          {{ car.horsepower }} horsepower
+        <div class="col-10 mb-2 mb-sm-0 ms-5 me-5">
+          In order to compete in the GT2 class race of the FIA GT Championship, a certain amount of vehicles had to be produced and sold to the public. Thus, the Porsche 993 was born, powered by a {{ car.engine }} engine, capable of producing
+          {{ car.horsepower }} horsepower.
         </div>
-        <div class="col-2 ">
+        <div class="col-10 mb-2 mb-sm-0 ms-5 me-5 ">
             0-60mph: {{ car.sixty }}
             <br />
             0-100mph: {{ car.hundred }}
             <br />
             Top Speed: {{ car.topSpeed }}
         </div>
-        <div class="col-3 ">
+        <div class="col-10 mb-2 mb-sm-0 ms-5 me-5">
           Curb Weight: {{ car.curbWeight }}
           <br />
           Power To Weight Ratio: {{ car.ptw }}

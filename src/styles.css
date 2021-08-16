@@ -13,13 +13,21 @@ h1 {
 
 @media (max-width: 768px) {
     .card-title {
-        font-size: 1.65em;
+        font-size: 1.4em;
     }
     .btn-outline-warning-1 {
-        margin: -50px;
-        padding: 5px;
+        margin: -42px;
+        padding: 3px;
         font-size: 6px;
     }
+    .info {
+        font-size: .8em;
+        line-height: 98%;
+    }
+}
+
+.mySmallClass {
+
 }
 
 .info{
