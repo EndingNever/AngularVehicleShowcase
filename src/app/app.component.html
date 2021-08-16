@@ -1,9 +1,9 @@
 <div class="container-fluid vh-100">
   <div class="row rec">
-    <div class="d-none d-lg-block top d-flex justify-content-start">
+    <div class="d-none d-lg-block  d-flex justify-content-start">
       <h1>Select A Country to view cars:</h1>
     </div>
-    <div class="d-none col-6  top d-flex justify-content-end">
+    <!-- <div class="d-none col-6  top d-flex justify-content-end">
       <h3>Recommend a car:</h3>
       <button
         class="
@@ -20,9 +20,9 @@
       >
         Click Me
       </button>
-    </div>
+    </div> -->
   </div>
-  <div class="row recommendForm" *ngIf="recommend">
+  <!-- <div class="row recommendForm" *ngIf="recommend">
     <div class="col">
       Year:
       <input
@@ -55,16 +55,14 @@
         </p>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="row flagRow">
     <div
-      class="col-12 col-lg-4 format d-flex align-self-center italyFlagContainer" 
+      class="col-12 col-lg-4 format d-flex align-self-center" 
       (click)="italianRoute()"
       (click)="scroll()"
-    >
-      <!-- Italian Vehicles-->
-      <div class="italian d-flex">
-        <!-- Italian flag-->
+    > <!-- Italian Vehicles-->
+      <div class="italian d-flex mb-4 mb-md-0"> <!-- Italian flag-->
         <h1 class="hide">Italy</h1>
       </div>
     </div>
@@ -81,7 +79,6 @@
     </div>
   </div>
 </div>
+<span class="mt-md-5" #target></span>
 <router-outlet>
-  <span #target> 
-    </span>
 </router-outlet>
