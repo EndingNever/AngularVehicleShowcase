@@ -8,6 +8,18 @@ h1 {
 
 .card-title {
     font-size: 3.5em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.65em;
+    }
+    .btn-outline-warning-1 {
+        margin: -50px;
+        padding: 5px;
+        font-size: 6px;
+    }
 }
 
 .info{

@@ -63,7 +63,7 @@ p > .model {
     justify-content: center;
 }
 .container-fluid {
-    border: 10px solid green;
+    /* border: 10px solid green; */
 }
 .italyFlagContainer{
     border: 2px solid green;
