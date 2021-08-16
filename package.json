@@ -1,5 +1,5 @@
 {
-  "name": "angular-vehicle-showcase",
+  "name": "final",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,6 +18,10 @@
     "@angular/platform-browser": "~12.0.2",
     "@angular/platform-browser-dynamic": "~12.0.2",
     "@angular/router": "~12.0.2",
+<<<<<<< HEAD
+=======
+    "bootstrap": "^5.0.2",
+>>>>>>> 5c88925dc02647c58aff11a445ae19483214c383
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
@@ -28,6 +32,10 @@
     "@angular/compiler-cli": "~12.0.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+<<<<<<< HEAD
+=======
+    "angular-cli-ghpages": "^1.0.0-rc.2",
+>>>>>>> 5c88925dc02647c58aff11a445ae19483214c383
     "jasmine-core": "~3.7.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",

@@ -1,0 +1,59 @@
+<div *ngFor="let car of acura" #car1>
+    <div class="card border-0 g-0 text-white bg-dark">
+      <img src="{{ car.photo }}" class="img-fluid" alt="" srcset="" />
+      <div
+        class="
+          card-img-overlay
+          fs-1
+          d-flex
+          align-items-center
+          justify-content-center
+          bg-gradient
+        "
+      >
+        <h1 class="card-title mt-5">
+          {{ car.year }} {{ car.make }} {{ car.model }}
+        </h1>
+        <div class="alignButton d-flex justify-content-center align-items-end">
+          <button
+            class="btn btn-outline-warning-1"
+            (click)="displayAcura()"
+            (click)="scroll()"
+          >
+            <div #target></div>
+            INFO
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="
+        row
+        d-flex
+        align-content-center
+        justify-content-around
+        info
+        border-0
+        g-0
+        d-flex
+      "
+      *ngIf="acuraInfo"
+    >
+      <div class="col-3 ms-5 me-5">
+        The Acura NSX, or Honda NSX outside of North America, was meant to be a direct competitor with other super car manufacturers, such as Ferrari and Porsche. 
+        A {{ car.engine }}, {{ car.horsepower }} horsepower engine powers the iconic machine, driven by "The Wolf" in the movie <i>Pulp Fiction</i>.
+      </div>
+      <div class="col-2">
+        0-60mph: {{ car.sixty }}
+        <br />
+        Top Speed: {{ car.topSpeed }}
+      </div>
+      <div class="col-3">
+        Curb Weight: {{ car.curbWeight }}
+        <br />
+        Power To Weight Ratio: {{ car.ptw }}
+        <br />
+      </div>
+    </div>
+  </div>
+  
