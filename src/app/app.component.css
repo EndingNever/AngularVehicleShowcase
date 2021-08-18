@@ -10,8 +10,8 @@ body {
     justify-content: space-around;
 }
 
+
 .flagRow {
-    height: 94vh;
     /* border: 2px solid red; */
 }
 
@@ -35,31 +35,20 @@ p > .make {
 p > .model {
     color: #FFCC00;
 }
-.rec {
-    /* border: 2px solid green; */
-    height: 5vh;
-}
 
-.german {
-    background-repeat: no-repeat;
-    width: 33%;
-}
-
-.flag {
+.flag { /* German Flag*/
     align-self: center;
     background:linear-gradient(to top, #FFCC00 0, #FFCC00 33%, #FF0000 33%, #FF0000 66%, black 66%, black 100%);
-    display: block;
-    height: 50%;
-    width: 100%;
+    /* display: block; */
+    height: 380px;
+    width: 500px;
 }
 
 
-.italian {
+.italian { /* Italian Flag */
     /* border: 2px solid purple; */
-    /* display: block; */
-    /* max-height: 480px; */
-    height: 480px;
-    width: 580px;  
+    height: 380px;
+    width: 480px;  
     background:linear-gradient(to right, green 0, green 33%, white 33%, white 66%, #ff0000 66%, #ff0000 100%);
     /* background-size: auto 100%; */
     /* background-position: center;
@@ -71,8 +60,13 @@ p > .model {
     justify-content: center;
 }
 
+
+
+.container-fluid {
+    /* border: 10px solid green; */
+}
 .italyFlagContainer{
-    /* border: 2px solid green; */
+    border: 2px solid green;
     height: 100%;
     display: flex;
     align-items: center;
@@ -80,19 +74,52 @@ p > .model {
 }
 
 .top {
-    height: 0vh;
+    /* height: 0vh; */
 }
 
 
 .japan{
     background-color: #bc002d;
     border-radius: 50%;  /*Makes this a circle*/
-    height: 65%;
-    width: 33%;
-    order: 100;
+    height: 420px;
+    width: 420px;
+    /* order: 100; */
     display: block;
-    position: absolute;
+    /* position: absolute; */
 }
+
+@media (max-width: 768px) {
+    .italian {
+        height: 200px;
+        width: 300px;
+    }
+    .japan {
+        height: 275px;
+        width: 275px;
+    }
+    .flag {
+        height: 200px;
+        width: 320px; 
+    }
+}
+
+
+@media only screen and (min-width:1201px) and (max-width:1467px){
+    .italian {
+        height: 200px;
+        width: 350px;
+    }
+    .japan {
+        height: 275px;
+        width: 275px;
+    }
+    .flag {
+        height: 200px;
+        width: 320px; 
+    }
+}
+
+
 
 .hide {
     visibility: hidden;
@@ -115,30 +142,6 @@ p > .model {
  .flag .hide {
     color: red;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.photo {
-    /* border: 2px dashed blue; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    width: 90%;
-}
-.photo2 {
-    /* border: 2px dashed blue; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    /* border-radius: 8%; */
-}
-
-.r34 {
-    z-index: 100;
-    width: 70%;
-    height: 35%;
 }
 
 h1 {

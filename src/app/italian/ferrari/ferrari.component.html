@@ -25,18 +25,18 @@
       <div class="row d-flex align-content-center justify-content-around info border-0 g-0 d-flex"
       *ngIf="ferrariInfo"
       >
-        <div class="col-3 ms-5 me-5">
+        <div class="col-10 mb-2 mb-sm-0 col-sm-4 ms-5 me-5">
            The F50 GT is a track car based on the Ferrari F50. The vehicle was ultimately scrapped and never raced due to homologation, the requirement that a certain number of road-legal models needed to be produced in order to race.  Powered by a {{ car.engine }} producing
           {{ car.horsepower }} horsepower, the car would have been a serious contender in the GT1 Race Group
         </div>
-        <div class="col-2 ">
+        <div class="col-10 col-sm-2 mb-2 mb-sm-0 ">
             0-60mph: {{ car.sixty }}
             <br />
             0-100mph: {{ car.hundred }}
             <br />
             Top Speed: {{ car.topSpeed }}
         </div>
-        <div class="col-3 ">
+        <div class="col-10 col-sm-2 mb-2 mb-sm-0 ">
           Curb Weight: {{ car.curbWeight }}
           <br />
           Power To Weight Ratio: {{ car.ptw }}

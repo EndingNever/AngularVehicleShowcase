@@ -1,5 +1,5 @@
 import { CarsService } from 'src/app/cars.service';
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Output } from '@angular/core';
 import { Car } from '../car.model';
 
 
@@ -9,7 +9,7 @@ import { Car } from '../car.model';
   styleUrls: ['./japanese.component.css']
 })
 export class JapaneseComponent  implements OnInit{
-
+  @Output() hideCarTitle:boolean = false;
   
   
   ngOnInit() {
