@@ -1,5 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+<<<<<<< HEAD
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+=======
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -37,6 +50,7 @@ import { ToyotaComponent } from './japanese/toyota/toyota.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule
+>>>>>>> 5c88925dc02647c58aff11a445ae19483214c383
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,5 @@
+This project showcases vehicles of the '90s from Japan, Italy, and Germany. Each region's flag is clickable and will show that country's cars. The project utilizes Angular and its structural directives such as ngFor and ngIf, as well as click listeners, services, and components. All data including vehicle engines and information underneath the vehicle were written by myself based on research and what I already knew. As of now, the project is not meant to be displayed on mobile.
+
 # Final
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
